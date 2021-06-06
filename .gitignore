@@ -9,3 +9,5 @@ yarn.*
 
 # build
 /build
+# Local Netlify folder
+.netlify
