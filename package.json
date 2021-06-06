@@ -9,6 +9,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "^3.4.3",
+    "react-use-websocket": "^2.7.1",
     "tailwindcss": "^1.4.6"
   },
   "scripts": {
