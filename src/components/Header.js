@@ -9,7 +9,7 @@ function Header() {
     <div className="w-full flex flex-row justify-between items-center">
       <div>
         <span
-          data-testid="title"
+          id="title"
           className={`sm:text-3xl text-xl text-${theme}-500 font-medium tracking-wide capitalize`}
         >
           air quality monitoring

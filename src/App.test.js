@@ -1,9 +1,18 @@
-import React from 'react';
-import { render } from '@testing-library/react';
-import App from './App';
+import React from "react";
+import App from "./App";
+import { mount } from "enzyme";
 
-test('renders learn react link', () => {
-  const { getByText } = render(<App />);
-  const linkElement = getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+describe("team member test", () => {
+  let wrapper;
+  beforeEach(() => {
+    wrapper = mount(<App />);
+  });
+
+  test("loading", () => {
+    expect(wrapper.find("#connection").text()).toBe("Connecting");
+  });
+
+  test("render the title of dashboard", () => {
+    expect(wrapper.find("#title").text()).toContain("air quality monitoring");
+  });
 });

@@ -10,7 +10,10 @@ function Loader({ connectionStatus }) {
           <div className="absolute top-0 mt-1 w-3 h-3 rounded-full bg-blue-700"></div>
           <div className="absolute top-0 mt-1 w-3 h-3 rounded-full bg-blue-700"></div>
         </div>
-        <div className="text-gray-500 text-xs font-light mt-2 text-center">
+        <div
+          id="connection"
+          className="text-gray-500 text-xs font-light mt-2 text-center"
+        >
           {connectionStatus}
         </div>
       </div>
